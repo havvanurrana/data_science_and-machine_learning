@@ -8,34 +8,31 @@ Bagging:
 
 Boosting:
 - XGBoost kullanılmıştır.
-- Aşağıda parametreler vardır 
+- Aşağıda kodumun çıktısı bulunuyor:
 ````
 Yeni özellikler başarıyla eklendi!
- eğitim seti boyutu:(52150, 42)
-test seti boytu: (13038, 42)
-Fitting 3 folds for each of 12 candidates, totalling 36 fits
 
-en iyi ayarlar: {'max_depth': 20, 'min_samples_split': 2, 'n_estimators': 100}
-XGBoost Doğruluk Oranı: 0.7903819604233778
+--- RANDOM FOREST EĞİTİLİYOR ---
+Random Forest Raporu:
+              precision    recall  f1-score   support
 
-Detaylı Rapor:
-               precision    recall  f1-score   support
+           0       0.84      0.84      0.84      9768
+           1       0.52      0.50      0.51      3270
 
-           0       0.81      0.94      0.87      9768
-           1       0.66      0.34      0.45      3270
+    accuracy                           0.76     13038
+   macro avg       0.68      0.67      0.68     13038
+weighted avg       0.76      0.76      0.76     13038
 
-    accuracy                           0.79     13038
-   macro avg       0.73      0.64      0.66     13038
-weighted avg       0.77      0.79      0.77     13038
 
-Yeni XGBoost (Dengelenmiş) Raporu:
+--- XGBOOST EĞİTİLİYOR ---
+XGBoost Raporu:
               precision    recall  f1-score   support
 
            0       0.89      0.71      0.79      9768
-           1       0.46      0.74      0.57      3270
+           1       0.46      0.73      0.56      3270
 
-    accuracy                           0.72     13038
-   macro avg       0.68      0.72      0.68     13038
-weighted avg       0.78      0.72      0.74     13038
+    accuracy                           0.71     13038
+   macro avg       0.67      0.72      0.67     13038
+weighted avg       0.78      0.71      0.73     13038
 
 ````
